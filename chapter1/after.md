@@ -1,4 +1,4 @@
-# Call::After
+# 檢驗 mock 呼叫的順序
 
 使用 After 讓 MockRepository 在 deconstruct 的時候檢查順序。
 

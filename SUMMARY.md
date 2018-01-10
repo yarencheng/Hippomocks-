@@ -4,5 +4,6 @@
 * [使用方法](chapter1.md)
   * [Legacy C function](chapter1/legacy-c-function.md)
   * [C++ static function](chapter1/c++-static-function.md)
-  * [使用 Call::After 檢查順序](chapter1/after.md)
+  * [參數比對](chapter1/can-shu-bi-dui.md)
+  * [檢驗 mock 呼叫的順序](chapter1/after.md)
 
