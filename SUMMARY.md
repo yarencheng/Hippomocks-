@@ -2,4 +2,5 @@
 
 * [簡介](README.md)
 * [使用方法](chapter1.md)
+  * [legacy C function](chapter1/legacy-c-function.md)
 
