@@ -1,3 +1,5 @@
+sss
+
 ```cpp
 #include "hippomocks.h"
 
@@ -9,7 +11,7 @@ TEST(Demo, legacy_c_test) {
 
 	MockRepository mocks;
 
-	EXPET_EQ(123, legacy_c());
+	EXPECT_EQ(123, legacy_c());
 
 	mocks.ExpectCallFunc(legacy_c).Return(456);
 
@@ -17,5 +19,5 @@ TEST(Demo, legacy_c_test) {
 }
 ```
 
-
+sss
 
