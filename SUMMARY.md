@@ -1,5 +1,5 @@
 # Summary
 
 * [簡介](README.md)
-* [First Chapter](chapter1.md)
+* [使用方法](chapter1.md)
 
