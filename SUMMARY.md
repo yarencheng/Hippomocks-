@@ -9,4 +9,5 @@
   * [檢驗 mock 呼叫的順序](chapter1/after.md)
   * [ExpectCall vs OnCall](chapter1/expectcall-vs-oncall.md)
   * [Mock Object](chapter1/mock-object.md)
+* [實作原理](shi-zuo-yuan-li.md)
 
