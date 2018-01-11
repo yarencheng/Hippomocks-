@@ -19,7 +19,7 @@ TEST(HippoMocksDemo, Object)
 
     mocks.ExpectCall(some, SomeConcrete::vertualFunction).Return(123);
 
-    EXPECT_EQ(123, some->vertualFunction());                                // pass
+    EXPECT_EQ(123, some->vertualFunction());                    // pass
 }
 ```
 
@@ -42,7 +42,7 @@ TEST(HippoMocksDemo, pureVertualFunction)
 
     mocks.ExpectCall(some, SomeInterface::pureVertualFunction).Return(123);
 
-    EXPECT_EQ(123, some->pureVertualFunction());                              // pass
+    EXPECT_EQ(123, some->pureVertualFunction());                  // pass
 }
 ```
 
@@ -65,7 +65,7 @@ TEST(HippoMocksDemo, notVertualFunction)
 
     mocks.ExpectCall(some, SomeConcrete::notVertualFunction).Return(123);
 
-    EXPECT_EQ(123, some->notVertualFunction());                            // fail
+    EXPECT_EQ(123, some->notVertualFunction());                // fail
 }
 ```
 
