@@ -16,7 +16,7 @@ TEST(HippoMocksDemo, Object)
     MockRepository mocks;
 
     SomeConcrete* some = mocks.Mock<SomeConcrete>();
-    
+
     mocks.ExpectCall(some, SomeConcrete::vertualFunction).Return(123);
 
     EXPECT_EQ(123, some->vertualFunction());                                // pass
@@ -30,19 +30,19 @@ pure virtual function 也可以
 
 class SomeInterface{
 public:
-	virtual ~SomeInterface () {};
-	virtual int pureVertualFunction() = 0;
+    virtual ~SomeInterface () {};
+    virtual int pureVertualFunction() = 0;
 };
 
 TEST(HippoMocksDemo, pureVertualFunction)
 {
-	MockRepository mocks;
+    MockRepository mocks;
 
-	SomeInterface* some = mocks.Mock<SomeInterface>();
-	
-	mocks.ExpectCall(some, SomeInterface::pureVertualFunction).Return(123);
+    SomeInterface* some = mocks.Mock<SomeInterface>();
 
-	EXPECT_EQ(123, some->pureVertualFunction());                              // pass
+    mocks.ExpectCall(some, SomeInterface::pureVertualFunction).Return(123);
+
+    EXPECT_EQ(123, some->pureVertualFunction());                              // pass
 }
 ```
 
@@ -53,21 +53,21 @@ TEST(HippoMocksDemo, pureVertualFunction)
 
 class SomeConcrete{
 public:
-	virtual ~SomeConcrete () {};
-	int notVertualFunction() { return 0; };
+    virtual ~SomeConcrete () {};
+    int notVertualFunction() { return 0; };
 };
 
 TEST(HippoMocksDemo, notVertualFunction)
 {
-	MockRepository mocks;
+    MockRepository mocks;
 
-	SomeConcrete* some = mocks.Mock<SomeConcrete>();
-	
-	mocks.ExpectCall(some, SomeConcrete::notVertualFunction).Return(123);
+    SomeConcrete* some = mocks.Mock<SomeConcrete>();
 
-	EXPECT_EQ(123, some->notVertualFunction());                            // fail
+    mocks.ExpectCall(some, SomeConcrete::notVertualFunction).Return(123);
+
+    EXPECT_EQ(123, some->notVertualFunction());                            // fail
 }
 ```
 
-
+跟其他 framework 比較，例如 Google Mock，Hippomocks 針對 class mock 的功能相對少，所以不建議使用 Hippomocks 來 mock class。
 
