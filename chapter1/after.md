@@ -13,7 +13,7 @@ int second() {
     return 2;
 }
 
-TEST(Demo, After_pass) {                                             // pass
+TEST(Demo, After_pass) {                                 // pass
 
     MockRepository mocks;
 
@@ -25,7 +25,7 @@ TEST(Demo, After_pass) {                                             // pass
     second();
 }
 
-TEST(Demo, After_fail) {                                             // fail
+TEST(Demo, After_fail) {                                 // fail
 
     MockRepository mocks;
 
