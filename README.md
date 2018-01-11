@@ -2,7 +2,7 @@
 
 Hippomocks 是一個 C++ 的 mocking framework。它可以抽換掉 C++ static function 或是 legacy C function。
 
-當撰寫 C++ 的 unit test 的時候，目前主流的 unit test framework 都沒有辦法針對 legacy code 做 mock，導致如果一個 C++ class 有使用到 C++ static function 或是 legacy C function 將無法測試，Hippomocks 解決了這個問題。
+當撰寫 C++ 的 unit test 的時候，目前主流的 unit test framework 都沒有辦法針對 legacy code 做 mock，導致如果一個 C++ class 有使用到 C++ static function 或是 legacy C function 將很難寫出可以測試的程式\(testable code\)，Hippomocks 雖然不能解決 testable 的問題，但是可以透過抽換掉 legacy code 讓一些不能被測試的程式還是可以寫出 unit test。
 
 [Hippomocks 官方 Wiki](https://www.gitbook.com/book/yarencheng/hippomocks/edit#)
 
