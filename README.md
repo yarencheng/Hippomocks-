@@ -8,5 +8,5 @@ Hippomocks 是一個 C++ 的 mocking framework。它可以抽換掉 C++ static f
 
 #### 先減少耦合
 
-這裡要特別聲明，在寫 C++ unit test 的時候，如果你發現你一定要 mock C++ static function 才能寫 unit test 的時候，代表你程式的耦合\(coupling\)太高，你應該優先考慮修改你的程式碼，降低未來的技術負債，除非萬不得已才使用 Hippomocks 或是其他類似的工具。
+在寫 C++ unit test 的時候，如果你發現你一定要 mock C++ static function 才能寫 unit test 的時候，代表你程式的耦合\(coupling\)太高，你應該優先考慮修改你的程式碼，降低未來的技術負債，除非萬不得已才使用 Hippomocks 或是其他類似的工具。
 
