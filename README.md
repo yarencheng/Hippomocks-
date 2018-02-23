@@ -1,3 +1,5 @@
+[read this article on GitBook](https://yarencheng.gitbooks.io/hippomocks/content/)
+
 # 簡介
 
 Hippomocks 是一個 C++ 的 mocking framework。它可以抽換掉 C++ static function 或是 legacy C function。
